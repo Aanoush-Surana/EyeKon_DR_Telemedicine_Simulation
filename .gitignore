@@ -1,0 +1,67 @@
+# =============================================================================
+# MATLAB & Simulink .gitignore
+# =============================================================================
+
+# MATLAB temporary and auto-save files
+*.asv
+*.m~
+*.autosave
+*.mat.bak
+*.m.bak
+
+# Simulink cache and generated compilation files
+slprj/
+models/slprj/
+*.slxc
+models/*.slxc
+*.slx.original
+*.slx.r*
+*.slx.autosave
+*.mdl.autosave
+*.mdl.r*
+
+# MEX compiled binaries
+*.mex*
+*.mexw32
+*.mexw64
+*.mexa64
+*.mexmaci64
+
+# Code generation output directories
+*_ert_rtw/
+*_grt_rtw/
+codegen/
+sfprj/
+
+# Simulation Output & Results
+SimulationResults/
+GradCAM_Output/
+
+# Large Datasets (keep SIH_TEST structure with placeholder, exclude massive raw data)
+SIH_data/
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Heavy training checkpoints
+*.pt
+*.pth
+models/*.pt
+models/*.pth
+
+# OS and System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*~
